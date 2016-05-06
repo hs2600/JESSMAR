@@ -1,0 +1,64 @@
+    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+         
+          <div class="medium-6 large-4 columns">
+        <!--  <div class="medium-6 large-5 columns">  -->
+            <h5 class="shadow-black">JESSMAR Management, LLC.</h5>
+            <p class="shadow-black">
+              19200 Von Karmen Avenue • Suite 400 <br>
+              Irvine, CA 92612
+            </p>
+          </div><!-- /.large-6.columns -->
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            <img src="/images/jessmar.png">
+        </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            {% for network_item in site.data.network %}
+              {% if forloop.first == true %}
+                <h5 class="shadow-black">{{ network_item.menu_name }}</h5>
+              {% endif %}
+            {% endfor %}
+
+            <ul class="no-bullet shadow-black">
+            {% for network_item in site.data.network %}
+              {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.url + site.baseurl %}{% endif %}
+                <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
+                  {{ network_item.name }}
+                </li>
+            {% endfor %}
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+         
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            {{ site.credits }}
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            {% for social_item in site.data.socialmedia %}
+              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
+            {% endfor %}
+            </ul>
+          </section>
+        
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>

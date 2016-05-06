@@ -1,0 +1,37 @@
+- title: Home
+  url: "/"
+  side: right
+
+- title: "Investment"
+  url: "/investment/highlight/"
+  side: right
+  dropdown:
+  - title: "Highlights"
+    url: "/investment/highlight/"
+  - title: "Situation Analysis"
+    url: "/investment/analysis/"
+  - title: "Market Analysis"
+    url: "/market/"
+
+- title: "Acquisition"
+  url: "/acquisition/strategy/"
+  side: right
+  dropdown:
+  - title: "Strategy"
+    url: "/acquisition/strategy/"
+  - title: "Execution"
+    url: "/acquisition/execution/"
+  - title: "Target Areas"
+    url: "/acquisition/target/"
+
+- title: "Leadership Team"
+  url: "/team/"
+  side: right
+
+- title: "Gallery"
+  url: "/gallery"
+  side: right
+
+- title: "Contact"
+  url: "/contact/"
+  side: right

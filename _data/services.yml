@@ -1,0 +1,29 @@
+#- menu_name: "Sitemap"
+
+#- name: "Investment"
+#  url: "/investment/highlight/"
+#  title: "Investment"
+
+#- name: "Acquisition"
+#  url: "/acquisition/strategy/"
+#  title: "Acquisition"
+
+#- name: "Management"
+#  url: "/team/"
+#  title: "Management"
+
+#- name: "Contact"
+#  url: "/contact/"
+#  title: "Contact"
+
+#- name: "RSS"
+#  url: "/feed.xml"
+#  title: "Subscribe to RSS Feed"
+
+#- name: "Atom"
+#  url: "/atom.xml"
+#  title: "Subscribe to Atom Feed"
+
+#- name: "sitemap.xml"
+#  url: "/sitemap.xml"
+#  title: "Sitemap for Google Webmaster Tools"
